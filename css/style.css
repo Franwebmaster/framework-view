@@ -1,0 +1,96 @@
+/********** Config Principal */
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i|Nunito:200,300,400,600,700,800,900');
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Muli', sans-serif;
+	font-size: 1.6rem;
+	color: #717171;
+	background-color: #FFF;
+}
+
+a {
+	color: #2a76e8;
+	text-decoration: none;
+}
+
+img, svg {
+	max-width: 100%;
+}
+
+
+/********** Header logo */
+.cd-header {
+	height: 140px;
+	border-bottom: 1px solid #e6e6e6;
+	text-align: center;
+	padding-top: 24px;
+}
+
+.cd-header h1 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 2rem;
+	color: #141414;
+}
+
+@media only screen and (min-width: 110px) {
+	.cd-header {
+		height: calc(100px + 560px);
+		padding-top: 60px;
+	}
+	.cd-header h1 {
+		font-size: 2.6rem;
+	}
+}
+
+
+/********** Rodapé */
+.cd-footer {
+	height: 250px;
+	background-color: #141414;
+	text-align: center;
+}
+
+.cd-footer p {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.8rem;
+	line-height: 250px;
+}
+
+
+/********** Artigos */
+.cd-articles {
+	position: relative;
+	width: 90%;
+	max-width: 650px;
+	margin: 0 auto 3em;
+}
+
+.cd-articles::before {
+	content: 'mobile';
+	display: none;
+}
+
+.cd-articles article {
+	padding: 3em 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.cd-articles article:last-of-type {
+	border-bottom: none;
+}
+
+.cd-articles h1 {
+	margin: .6em 0 .2em;
+	color:  #141414;
+	line-height: 1.2;
+	font-size: 2.4rem;
+	font-family: 'Nunito', sans-serif;;
+}
