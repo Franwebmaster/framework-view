@@ -29,7 +29,7 @@ img, svg {
 /********** Header logo */
 .cd-header {
 	height: 140px;
-	border-bottom: 1px solid #e6e6e6;
+	/* border-bottom: 1px solid #e6e6e6; */
 	text-align: center;
 	padding-top: 24px;
 }
@@ -43,7 +43,7 @@ img, svg {
 @media only screen and (min-width: 110px) {
 	.cd-header {
 		height: 320px;
-		padding-top: 60px;
+		padding-top: 20px;
 	}
 	.cd-header h1 {
 		font-size: 2.6rem;
@@ -100,6 +100,12 @@ img, svg {
 	line-height: 1.6;
 }
 
+p.code {
+    white-space: pre-wrap;
+    font-family: Roboto;
+    background: #eee;
+}
+
 .cd-articles p:last-of-type {
 	padding-bottom: 0;
 }
@@ -133,6 +139,7 @@ img, svg {
 
 .cd-read-more li {
 	counter-increment: articles;
+	list-style: none;
 }
 
 .cd-read-more a {

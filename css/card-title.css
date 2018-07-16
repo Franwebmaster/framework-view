@@ -1,0 +1,141 @@
+#header {
+	position: relative;
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	padding: 1px;
+}
+	.project-container {
+		/* margin: 160px auto; */
+	}
+	@media only screen and (max-width: 960px) {
+		.project-container {
+			margin: 90px auto;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.project-container {
+			margin: 0px auto;
+		}
+	}
+
+.card {
+	position: relative;
+	width: 380px;
+	height: 250px;
+	display: block;
+	margin: 0 20%;	
+}
+	.card-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 350px;
+		height: 250px;
+		box-shadow: rgb(227, 227, 227) 0px 5px 25px 0px;
+		transition: all 200ms ease;
+	}
+
+	.color {
+		background-color: #00FFC8;
+	}
+
+/*
+**
+** Animação
+**
+*/
+.project-container .card-bg {
+	transform: matrix(1);
+	transition: transform 0.1s ease;
+}
+	.card:hover .card-bg {
+		box-shadow: 0 15px 45px -5px rgba(10, 16, 34, .3);
+		transform: matrix(1.09581, -0.09587, 0.09587, 1.09581, 0, 0);
+	}
+
+.card-title {
+	position: absolute;
+	top: 20%;
+	left: 70%;
+	color: #08174D;
+	font-family: Roboto, sans-serif;
+	font-size: 55px;
+	font-weight: 400;
+	letter-spacing: -2px;
+	z-index: 99;
+}
+	.card-title {
+		transform: translateX(1);
+		transition: transform 0.1s ease;
+	}
+	.card:hover .card-title {
+		transform: translateX(0.8em);
+	}
+
+.card-sub {
+	position: absolute;
+	top: 80%;
+	left: 70%;
+	color:  #08174D;
+	font-family: Roboto, sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	z-index: 99;
+	white-space: nowrap;
+}
+	.card-sub {
+		transform: translateX(1);
+		transition: transform 0.2s ease;
+	}
+	.card:hover .card-sub {
+		transform: translateX(5em);
+	}
+
+.card-line {
+	position: absolute;
+	top: 64%;
+	left: calc(100% - 40px);
+	width: 80px;
+	height: 8px;
+	background: #08174D;
+	z-index: 99;
+}
+	.card-line {
+		transform: matrix(1);
+		transition: transform 0.2s ease;
+	}
+	.card:hover .card-line {
+		transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, -80, 5);
+	}
+
+
+/*
+**
+** Container
+**
+*/
+.content {
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	font-size: 13px;
+	background-color: #fff;
+	width: 70%;
+	padding: 0.01em 16px;
+	margin: 20px 0;
+	/*box-shadow: 0 4px 3px #ccc;*/
+	
+}
+	.box {
+		width: 40%;
+		background-color: #f3f3f3;
+		padding: 8px 12px;
+		border-radius: 4px;
+		border-left: 4px solid #00EF8F;
+		word-break: break-word;
+	}
+
+.clearfix {
+	clear: both;
+}
+
+
