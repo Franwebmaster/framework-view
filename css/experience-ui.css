@@ -372,13 +372,13 @@ body ::-webkit-scrollbar-thumb:hover {
 	outline: none;
 	border: none;
 	vertical-align: baseline;
-	background: #E0E1E2;
+	background: rgb(234, 234, 234)  none;
 	color: rgba(0, 0, 0, 0.6);
 	font-family: 'Roboto', 'Lato', sans-serif;
 	margin: 0em 0.25em 0em 0em;
 	padding: 0.78571429em 1.5em 0.78571429em;
 	text-transform: none;
-	font-weight: bold;
+	font-weight: 400;
 	line-height: 1em;
 	font-style: normal;
 	text-align: center;
@@ -390,6 +390,276 @@ body ::-webkit-scrollbar-thumb:hover {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	-webkit-transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  	transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
+  	transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+  	transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease, box-shadow 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
 	will-change: '';
 	-webkit-tap-higlight-color: transparent;
 }
+
+.io.botao:hover,
+.io.button:hover {
+	background-color: rgba(202, 203, 205, 0.88);
+	background-image: none;
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15);
+	box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15);
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.io.botao:hover .icone,
+.io.button:hover .icon {
+	opacity: 0.85;
+}
+
+.io.botao:focus,
+.io.button:focus {
+	background-color: rgba(202, 203, 205, 0.88);
+	color: rgba(0, 0, 0, 0.8);
+	background-image: '' !important;
+	-wbkit-box-shadow: '' !important;
+	box-shadow: '' !important;
+}
+
+.io.botao:focus .icone,
+.io.button:focus .icon {
+	opacity: 0.85;
+}
+
+.io.botao:active,
+.io.button:active {
+	background-color: rgb(216, 216, 216);
+	background-image: '';
+	color: rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, none;
+	box-shadow: 0px 0px 0px 1px transparent inset, none;
+}
+
+
+/*******************************
+             Ativo
+*******************************/
+.io.botao.ativo,
+.io.button.active {
+	background-color: rgb(208, 208, 208);
+	color: rgba(0, 0, 0, 0.95);
+	-webkit-box-shadow: 0px 0px 0px 1px transparent inset, none;
+	box-shadow: 0px 0px 0px 1px transparent inset, none;
+}
+
+.io.botao.ativo:hover,
+.io.button.active:hover {
+	background-color: rgb(197, 197, 197);
+	background-image: none;
+	color: rgba(0, 0, 0, 0.95);
+}
+
+.io.botao.ativo:active,
+.io.button.active:active {
+	background-color: rgb(197, 197, 197);
+	background-image: none;
+}
+
+
+/*******************************
+             Carregamento
+*******************************/
+.io.botao.carregando,
+.io.button.loading {
+	position: relative;
+	cursor: default;
+	text-shadow: none !important;
+	color: transparent !important;
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transition: all 0s linear, opacity 0.1s ease;
+  	transition: all 0s linear, opacity 0.1s ease;
+}
+
+.io.botao.carregando:before,
+.io.button.loading:before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	margin: -0.64285714em 0em 0em -0.64285714em;
+	width: 1.28571429em;
+	height: 1.28571429em;
+	border-radius: 500rem;
+	border: 0.2em solid;
+}
+
+.io.botao.carregando:after,
+.io.button.loading:after {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	margin: -0.64285714em 0em 0em -0.64285714em;
+	width: 1.28571429em;
+	height: 1.28571429em;
+	-webkit-animation: carregando-circulo 0.6s linear;
+	animation: carregando-circulo 0.6s linear;
+	-webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+  	border-radius: 500rem;
+  	border-color: #FFF transparent transparent;
+  	border-style: solid;
+  	border-width: 0.2em;
+  	-webkit-box-shadow: 0px 0px 0px 1px transparent;
+  	box-shadow: 0px 0px 0px 1px transparent;
+}
+
+
+@-webkit-keyframes carregando-circulo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes carregando-circulo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/*******************************
+             Desabilitado
+*******************************/
+.io.botao .desabilitado.botao,
+.io.button .disabled.button,
+.io.botao.desabilitado,
+.io.button.disabled,
+.io.botao:disabled,
+.io.button:disabled,
+.io.botao.desabilitado:hover,
+.io.button.disabled:hover,
+.io.botao.desabilitado.ativo.botao,
+.io.button.disabled.active.button {
+	cursor: default;
+	opacity: 0.45 !important;
+	background-image: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	pointer-events: none !important;
+}
+
+
+/*******************************
+             icone
+*******************************/
+.io[class*="alinhado esquerda"].botoes,
+.io[class*="floated left"].buttons,
+.io[class*="alinhado esquerda"].botao,
+.io[class*="floated left"].button {
+	float: left;
+	margin-left: 0em;
+	margin-right: 0.25em;
+}
+
+.io[class*="alinhado direita"].botoes,
+.io[class*="floated right"].buttons,
+.io[class*="alinhado direita"].botao,
+.io[class*="floated right"].button {
+	float: right;
+	margin-left: 0em;
+	margin-right: 0.25em;
+}
+
+
+/*******************************
+             Compacto
+*******************************/
+.io.botoes.compacto .botao,
+.io.botao.compacto {
+	padding: 0.58928571em 1.125em 0.58928571em;
+}
+
+.io.botoes.compacto.icone .botao,
+.io.buttons.compact.icon .button,
+.io.botao.compacto.icone,
+.io.button.compact.icon {
+	padding: 0.58928571em 0.58928571em 0.58928571em;
+}
+
+
+/*******************************
+             Tamanhos
+*******************************/
+.io.botoes.mini .botao,
+.io.buttons.mini .button,
+.io.botao.mini,
+.io.button.mini {
+	font-size: 0.78571429rem;
+}
+
+.io.botoes.minusculo .botao,
+.io.buttons.tiny .button,
+.io.botao.minusculo,
+.io.button.tiny {
+	font-size: 0.85714286rem;
+}
+
+.io.botoes.pequeno .botao,
+.io.buttons.small .button,
+.io.botao.pequeno,
+.io.button.small {
+	font-size: 0.92857143rem;
+}
+
+.io.botoes .botao,
+.io.buttons .button,
+.io.botao,
+.io.button {
+	font-size: 1rem;
+}
+
+.io.botoes.largo .botao,
+.io.buttons.large .button,
+.io.botao.largo,
+.io.button.large {
+	font-size: 1.14285714rem;
+}
+
+.io.botoes.grande .botao,
+.io.buttons.big .button,
+.io.botao.grande,
+.io.button.big {
+	font-size: 1.28571429rem;
+}
+
+
+/*******************************
+             Icone
+*******************************/
+.io.botoes.icone .botao,
+.io.buttons.icon .button,
+.io.botao.icone,
+.io.button.icon {
+	padding: 0.78571429em 0.78571429em 0.78571429em;
+}
+
+.io.botoes.icone .botao > .icone,
+.io.buttons.icon .button > .icon,
+.io.botao.icone > .icone,
+.io.button.icon > .icon {
+	opacity: 0.9;
+	margin: 0em !important;
+	vertical-align: top;
+}
+
+
+

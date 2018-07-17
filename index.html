@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="css/card-title.css" />
 	<link rel="stylesheet" href="css/reset.css">
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<script src="js/modernizr.js"></script>
 </head>
 <body>
@@ -21,32 +23,196 @@
 	<section class="cd-articles">
 		<article>
 			<header>
-				<img src="image/img-2.svg" alt="Header">
-				<h1>Declaração</h1>
+				<img src="image/img-3.svg" alt="Header">
+				<h1>Botão</h1>
+				<p>Botão padrão</p>
 			</header>
 
-			<p class="code">
-				&lt;button class="io botao"&gt; Botão &lt;/button&gt;
-				
-			</p>
-			<p>
+			<div class="wrapper">
 				<div class="io botao">
 					Botão
 				</div>
-			</p>
 
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque error quos consequuntur totam, esse commodi magnam dignissimos explicabo modi. Laborum temporibus enim eius quidem eum voluptatum eligendi. Nemo fuga at provident accusantium tempore eligendi alias sed! Provident veritatis adipisci deserunt. Totam repudiandae ducimus nemo aperiam assumenda. Odio quos, quam quod illum reiciendis sapiente doloremque quasi deserunt alias provident! Labore voluptatibus excepturi, ipsum et sint nihil delectus enim, commodi quis!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dicta praesentium dolor asperiores nesciunt quod sapiente est minus, architecto corrupti, excepturi hic ipsa, saepe dignissimos similique ullam repudiandae rem voluptate. Ipsa iusto, voluptate doloremque facere expedita, molestias omnis facilis. Adipisci voluptatum, quia alias aut sint totam facere porro aperiam repellat ipsa? Odio ut sint dicta magnam molestias maiores eos impedit natus iste quas perspiciatis voluptas autem, illum qui aperiam labore necessitatibus incidunt, placeat reiciendis facilis iusto reprehenderit. Ad, quisquam, voluptatibus!
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero laborum omnis iure cumque veritatis reiciendis, optio ad. Praesentium, illum. Deleniti ab rem laboriosam numquam natus explicabo sit cumque provident maxime.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae modi facilis vel distinctio itaque ea, commodi a autem, amet explicabo harum libero vero earum doloremque officiis, dolorum beatae soluta officia dignissimos. Ad odit ab, error illo! Iure numquam recusandae unde dignissimos aspernatur quia neque, voluptatibus ea, iste eaque corporis doloribus.
-			</p>
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao</span>"<span class="destaque">&gt;</span> Botão <span class="destaque">&lt;/button&gt;</span> 
+				</div>
+			</div>
+
+			<header>
+				<h1>Botão ativo</h1>
+				<p>Adicionando apenas a classe 'ativo'</p>
+			</header>
+
+			<div class="wrapper">
+				<div class="io botao ativo">
+					Ativo
+				</div>
+
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao ativo</span>"<span class="destaque">&gt;</span> Ativo <span class="destaque">&lt;/button&gt;</span> 
+				</div>
+			</div>
+
+			<header>
+				<h1>Botão Carregando</h1>
+				<p>Loader dentro do botão</p>
+			</header>
+
+			<div class="wrapper">
+				<div class="io botao carregando">
+					Carregando
+				</div>
+
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao carregando</span>"<span class="destaque">&gt;</span> Carregando <span class="destaque">&lt;/button&gt;</span> 
+				</div>
+			</div>
+
+			<header>
+				<h1>Botão Desabilitado</h1>
+				<p>Botão com aparência desabilitado</p>
+			</header>
+
+			<div class="wrapper">
+				<div class="io botao desabilitado">
+					Botão
+				</div>
+
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao desabilitado</span>"<span class="destaque">&gt;</span> Botão <span class="destaque">&lt;/button&gt;</span> 
+				</div>
+			</div>
+
+			<header>
+				<h1>Alinhamento</h1>
+				<p>Botão alinhado esquerda ou direita</p>
+			</header>
+
+			<div class="wrapper">
+				<div class="botaoes">
+					<div class="io botao alinhado esquerda">Esquerda</div>
+					<div class="io botao alinhado direita">Direita</div>
+				</div>
+				
+
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao alinhado esquerda</span>"<span class="destaque">&gt;</span> Esquerda<span class="destaque">&lt;/button&gt;</span> 
+					<br><br>
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao alinhado direita</span>"<span class="destaque">&gt;</span> Direita<span class="destaque">&lt;/button&gt;</span> 
+				</div>
+			</div>
+
+			<header>
+				<h1>Botão Compacto</h1>
+				<p>Botão com padding compacto</p>
+			</header>
+
+			<div class="wrapper">
+				<div class="io botao compacto">
+					Botão
+				</div>
+
+				<div class="io botao compacto icone">
+					<i class="icone fa fa-cog" aria-hidden="true"></i>
+				</div>
+
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao compacto</span>"<span class="destaque">&gt;</span> Botão <span class="destaque">&lt;/button&gt;</span> 
+					<br><br>
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao compacto icone</span>"<span class="destaque">&gt;</span><br>  <span class="icone"> &lt;i class="icone fa fa-cog"&gt;&lt;/i&gt;</span> <br> <span class="destaque">&lt;/button&gt;</span>
+				</div>
+			</div>
+
+			<header>
+				<h1>Tamanho dos botões</h1>
+				<p>Botão com diferentes tamanhos</p>
+			</header>
+
+			<div class="wrapper">
+				<div class="io botao mini">
+					Mini
+				</div>
+
+				<div class="io botao minusculo">
+					Minúsculo
+				</div>
+
+				<div class="io botao pequeno">
+					Pequeno
+				</div>
+
+				<div class="io botao">
+					Padrão
+				</div>
+
+				<div class="io botao largo">
+					Largo
+				</div>
+
+				<div class="io botao grande">
+					Grande
+				</div>
+				
+
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao mini</span>"<span class="destaque">&gt;</span> Mini <span class="destaque">&lt;/button&gt;</span>
+					<br><br>
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao minusculo</span>"<span class="destaque">&gt;</span> Minúsculo <span class="destaque">&lt;/button&gt;</span>
+					<br><br>
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao pequeno</span>"<span class="destaque">&gt;</span> Pequeno <span class="destaque">&lt;/button&gt;</span>
+					<br><br>
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao</span>"<span class="destaque">&gt;</span> Padrão <span class="destaque">&lt;/button&gt;</span>
+				</div>
+			</div>
+
+			<header>
+				<h1>Botão com icone</h1>
+				<p>Botão somente com icone</p>
+			</header>
+
+			<div class="wrapper">
+	
+				<div class="io botao icone">
+					<i class="icone fa fa-apple" aria-hidden="true"></i>
+				</div>
+
+				<div class="code-html">
+					<i class="fa fa-expand" aria-hidden="true"></i>
+				</div>
+
+				<div class="code">
+					<span class="destaque"> &lt;button </span> <span class="class">class</span>="<span class="classes">io botao icone</span>"<span class="destaque">&gt;</span><br>  <span class="icone"> &lt;i class="icone fa fa-cog"&gt;&lt;/i&gt;</span> <br> <span class="destaque">&lt;/button&gt;</span>
+
+				</div>
+			</div>
 		</article>
 
 		<article>

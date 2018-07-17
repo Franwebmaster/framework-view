@@ -125,4 +125,9 @@ jQuery(document).ready(function($){
 	function checkMQ() {
 		return window.getComputedStyle(articlesWrapper.get(0), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
+
+	$('.code-html').click(function() {
+		/* Act on the event */
+		$('.code').slideToggle("down", "swing");
+	});
 });
